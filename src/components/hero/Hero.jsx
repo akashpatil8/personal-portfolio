@@ -6,7 +6,7 @@ import Header from "../header/Header";
 import "./hero.scss";
 import Social from "./Social";
 
-const imgPath = "../../../../public/assets/";
+const imgPath = "public/assets/";
 
 const varients = {
   initial: { opacity: 0, translateY: -20 },
