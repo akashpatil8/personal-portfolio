@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { skillsData } from "../../../public/data/skillsData";
 import "./skills.scss";
-
-const imgPath = "../../../public/assets/";
+import assets from "../../assets";
 
 export default function Skills() {
   const varients = {
@@ -41,7 +40,7 @@ export default function Skills() {
 function SkillComponent({ item, variants }) {
   return (
     <motion.li variants={variants} className="skill--component">
-      <img src={`${imgPath}${item.toLowerCase()}.png`} alt="" />
+      <img src={assets[item.toLowerCase()]} alt={item.toLowerCase()} />
       <span>{item}</span>
     </motion.li>
   );

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import "./social.scss";
 
-const imgPath = "../../../../public/assets/";
+import "./social.scss";
+import assets from "../../assets";
 
 const list = ["linkedin", "github", "twitter", "instagram"];
 
@@ -20,7 +20,7 @@ export default function Social() {
       {list.map((item, i) => (
         <motion.img
           key={item}
-          src={`${imgPath}${item}.png`}
+          src={assets[item]}
           alt={`${item}-logo`}
           variants={varients}
           initial="initial"

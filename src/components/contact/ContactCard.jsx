@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Button from "../Button";
 import "./contactCard.scss";
+import assets from "../../assets";
 
 const imgPath = "../../../public/assets/";
 
@@ -89,7 +90,7 @@ export default function ContactCard() {
               custom={1.6 + i * 0.3}
             >
               <div className="img--container">
-                <img src={`${imgPath}${item.icon}.png`} alt="" />
+                <img src={assets[item.icon]} alt={item.icon} />
               </div>
               <div>
                 <span>{item.title}</span>

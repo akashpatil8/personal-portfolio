@@ -101,7 +101,7 @@ export default function Hero() {
             >
               <motion.img
                 // src={`${imgPath}profile-img.png`}
-                src={assets.figma}
+                src={assets.profileImg}
                 alt="profile-img"
                 initial={{ scale: 0.8, opacity: 0, translateY: 50 }}
                 whileInView={{ scale: 1, opacity: 1, translateY: 0 }}
