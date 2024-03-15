@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  img {
+    height: 28px;
+    cursor: pointer;
+  }
+  img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+}

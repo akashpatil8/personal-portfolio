@@ -1,0 +1,21 @@
+.button {
+  height: 50px;
+  width: 170px;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5a5959;
+}
+.button:hover {
+  transform: translateY(-7px);
+  transition: 0.3s;
+}
+
+.solid--button {
+  border: none;
+  background-color: #fadc40;
+}
+.border--button {
+  border: 2px solid #fadc40;
+  background-color: transparent;
+}

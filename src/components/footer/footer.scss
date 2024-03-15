@@ -1,0 +1,45 @@
+footer {
+  padding: 4% 10% 0;
+  height: 250px;
+  background-color: #fadc40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  span:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  .terms--container {
+    display: flex;
+    gap: 50px;
+
+    h5 {
+      cursor: pointer;
+    }
+    h5:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+  }
+
+  .footer--social {
+    display: flex;
+    gap: 40px;
+
+    img {
+      height: 28px;
+      cursor: pointer;
+    }
+    img:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+    }
+  }
+}

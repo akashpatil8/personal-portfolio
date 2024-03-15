@@ -1,0 +1,12 @@
+.project {
+  height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  hr {
+    margin-bottom: 3rem;
+  }
+}

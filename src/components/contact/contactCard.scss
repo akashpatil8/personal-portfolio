@@ -1,0 +1,95 @@
+.contact--card {
+  background-color: #fcfae7;
+  height: 530px;
+  width: 70%;
+  z-index: 1;
+  border-radius: 35px;
+  position: absolute;
+  margin: 0 auto;
+  inset: auto 0 180px 0;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgb(196, 196, 196);
+  display: flex;
+  // background: linear-gradient(#fff, #fbf7d1);
+
+  .contact-card-form {
+    width: 50%;
+    // background-color: aquamarine;
+    margin: 50px;
+    text-align: left;
+
+    form {
+      height: 90%;
+
+      label {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #525151;
+      }
+      div {
+        height: 65px;
+        input {
+          margin-top: 5px;
+          width: 100%;
+          padding: 10px 10px;
+          background-color: transparent;
+          border: 1.5px solid #fadc40;
+          border-radius: 10px;
+        }
+      }
+      textarea {
+        margin: 5px 0 20px;
+        width: 100%;
+        padding: 10px 10px;
+        background-color: transparent;
+        border: 1.5px solid #fadc40;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .contact-card-details {
+    width: 50%;
+    margin: 50px;
+    text-align: left;
+
+    p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding: 15px 0;
+
+      li {
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .img--container {
+          background-color: #fadc40;
+          padding: 12px;
+          border-radius: 50px;
+          display: grid;
+          place-items: center;
+
+          img {
+            height: 24px;
+          }
+        }
+
+        div {
+          span {
+            font-size: 1.1rem;
+            font-weight: 500;
+            // color: #fadc40;
+          }
+          p {
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.contact {
+  height: 100vh;
+  position: relative;
+
+  .contact--container {
+    height: calc(100% - 250px);
+  }
+}
