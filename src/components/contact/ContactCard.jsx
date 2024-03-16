@@ -3,8 +3,6 @@ import Button from "../Button";
 import "./contactCard.scss";
 import assets from "../../assets";
 
-const imgPath = "../../../public/assets/";
-
 const data = [
   { title: "Address", subtitle: "Bangalore, India", icon: "location" },
   { title: "Phone", subtitle: "+91 8806666249", icon: "phone" },

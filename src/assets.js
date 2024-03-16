@@ -42,6 +42,7 @@ import webProject5 from "../public/assets/web-project-5.jpg";
 import word from "../public/assets/word.png";
 
 const assets = {
+  profile,
   figma,
   github,
   linkedin,
