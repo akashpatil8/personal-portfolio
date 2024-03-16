@@ -5,7 +5,6 @@ import "./card.scss";
 export default function Card({ service }) {
   const { title, subtitle, image } = service;
 
-  console.log(image);
   return (
     <div className="card">
       <img src={assets[image]} alt={`${image}-img`} />

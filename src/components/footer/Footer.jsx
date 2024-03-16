@@ -1,3 +1,4 @@
+import assets from "../../assets";
 import "./footer.scss";
 
 export default function Footer() {
@@ -10,9 +11,9 @@ export default function Footer() {
         <h5>Cookies</h5>
       </div>
       <div className="footer--social">
-        <img src="../../../public/assets/linkedin.png" alt="linkedin-icon" />
-        <img src="../../../public/assets/twitter.png" alt="twitter-icon" />
-        <img src="../../../public/assets/instagram.png" alt="instagram-icon" />
+        <img src={assets.linkedin} alt="linkedin-icon" />
+        <img src={assets.twitter} alt="twitter-icon" />
+        <img src={assets.instagram} alt="instagram-icon" />
       </div>
     </footer>
   );
