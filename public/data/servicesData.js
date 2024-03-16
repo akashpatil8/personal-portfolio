@@ -9,7 +9,7 @@ export const servicesData = [
   {
     id: 2,
     title: "UI/UX",
-    image: "ui-ux",
+    image: "uiux",
     subtitle:
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ",
   },
