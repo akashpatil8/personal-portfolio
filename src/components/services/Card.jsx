@@ -6,9 +6,12 @@ export default function Card({ service }) {
 
   return (
     <div className="card">
-      <img src={image} alt={`${image}-img`} />
-      <h3>{title}</h3>
-      <p>{subtitle}</p>
+      <div>
+        <img src={image} alt={`${image}-img`} />
+        <h3>{title}</h3>
+        <p>{subtitle}</p>
+      </div>
+
       <Button>Check out</Button>
     </div>
   );
