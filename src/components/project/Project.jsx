@@ -3,7 +3,7 @@ import "./project.scss";
 
 export default function Project() {
   return (
-    <section className="project">
+    <section id="project" className="project">
       <h2>Check out my creations</h2>
       <hr />
       <TabComponent />

@@ -1,16 +1,19 @@
 import { motion } from "framer-motion";
 import Button from "../Button";
 import "./contactCard.scss";
-import assets from "../../assets";
+import { useForm } from "react-hook-form";
+import location from "../../../public/assets/location.png";
+import phone from "../../../public/assets/phone.png";
+import email from "../../../public/assets/email.png";
 
 const data = [
-  { title: "Address", subtitle: "Bangalore, India", icon: "location" },
-  { title: "Phone", subtitle: "+91 8806666249", icon: "phone" },
-  { title: "Mail", subtitle: "akashpatil4659@gmail.com", icon: "email" },
+  { title: "Address", subtitle: "Bangalore, India", icon: location },
+  { title: "Phone", subtitle: "+91 8806666249", icon: phone },
+  { title: "Mail", subtitle: "akashpatil4659@gmail.com", icon: email },
 ];
 
 const varients = {
-  initial: { translateY: -30, opacity: 0 },
+  initial: { translateY: -50, opacity: 0 },
   final: (i) => ({
     translateY: 0,
     opacity: 1,
@@ -19,6 +22,14 @@ const varients = {
 };
 
 export default function ContactCard() {
+  const { register, formState, handleSubmit } = useForm();
+
+  const { errors } = formState;
+
+  function onSubmit(data) {
+    console.log(errors);
+  }
+
   return (
     <motion.div
       className="contact--card"
@@ -32,25 +43,44 @@ export default function ContactCard() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <form action="submit">
-          <label htmlFor="name">Name :</label>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <label htmlFor="fullName">Name :</label>
           <div>
-            <input type="text" id="name" />
+            <input
+              type="text"
+              id="fullName"
+              {...register("fullName", { required: "Name can't be empty" })}
+            />
+            {errors?.fullName?.message && <p>{errors.fullName.message}</p>}
           </div>
           <label htmlFor="email">Email :</label>
           <div>
-            <input type="email" id="email" />
+            <input
+              type="email"
+              id="email"
+              {...register("email", { required: "Email can't be empty" })}
+            />
+            {errors?.email?.message && <p>{errors.email.message}</p>}
           </div>
           <label htmlFor="subject">Subject :</label>
           <div>
-            <input type="text" id="subject" />
+            <input
+              type="text"
+              id="subject"
+              {...register("subject", { required: "Subject can't be empty" })}
+            />
+            {errors?.subject?.message && <p>{errors.subject.message}</p>}
           </div>
           <label htmlFor="description">Description :</label>
           <div>
-            <textarea type="text" id="subject" rows={4} />
+            <textarea
+              type="text"
+              id="description"
+              {...register("description")}
+            />
           </div>
+          <Button btnType="submit">Submit</Button>
         </form>
-        <Button>Submit</Button>
       </motion.div>
       <div className="contact-card-details">
         <div>
@@ -75,8 +105,8 @@ export default function ContactCard() {
           whileInView="final"
           custom={1.6}
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-          atque velit doloribus accusantium obcaecati quis error omnis sequi
+          Let&apos;s Connect. Drop me a line for collaborations, projects, or
+          just to say hello. Excited to hear from you!
         </motion.p>
         <ul>
           {data.map((item, i) => (
@@ -88,7 +118,7 @@ export default function ContactCard() {
               custom={1.6 + i * 0.3}
             >
               <div className="img--container">
-                <img src={assets[item.icon]} alt={item.icon} />
+                <img src={item.icon} alt={item.icon} />
               </div>
               <div>
                 <span>{item.title}</span>

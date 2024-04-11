@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
-
+import github from "../../../public/assets/github.png";
+import linkedin from "../../../public/assets/linkedin.png";
+import twitter from "../../../public/assets/twitter.png";
+import instagram from "../../../public/assets/instagram.png";
 import "./social.scss";
-import assets from "../../assets";
 
-const list = ["linkedin", "github", "twitter", "instagram"];
+const list = [
+  { socialName: "linkedin", icon: linkedin },
+  { socialName: "github", icon: github },
+  { socialName: "twitter", icon: twitter },
+  { socialName: "instagram", icon: instagram },
+];
 
 const varients = {
   initial: { translateX: -50, opacity: 0 },
@@ -19,9 +26,9 @@ export default function Social() {
     <div className="social">
       {list.map((item, i) => (
         <motion.img
-          key={item}
-          src={assets[item]}
-          alt={`${item}-logo`}
+          key={item.socialName}
+          src={item.icon}
+          alt={item.socialName}
           variants={varients}
           initial="initial"
           whileInView="final"

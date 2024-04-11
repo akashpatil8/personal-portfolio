@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 import Button from "../Button";
 import "./about.scss";
-import assets from "../../assets";
+import profileImg from "../../../public/assets/profile.png";
 
 export default function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <motion.div
         className="about--img"
         initial={{ translateX: -100, opacity: 0 }}
@@ -20,7 +20,7 @@ export default function About() {
             whileInView={{ translateX: 0, translateY: 0 }}
             transition={{ duration: 1.5, delay: 1 }}
           >
-            <img src={assets.profileImg} alt="profile-img" />
+            <img src={profileImg} alt="profile-img" />
           </motion.div>
         </div>
       </motion.div>

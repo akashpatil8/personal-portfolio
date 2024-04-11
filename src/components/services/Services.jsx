@@ -15,12 +15,13 @@ export default function Services() {
   };
 
   return (
-    <section className="services">
+    <section id="services" className="services">
       <h2>Innovate with my Services</h2>
       <hr />
       <p className="services-subheading">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quia
-        reiciendis nobis, sit eius accusantium iusto cumque maiores voluptatum,
+        Elevate your projects with my tailored solutions and expertise. From
+        captivating front-end designs to seamless user experiences, let&apos;s
+        bring your ideas to life.
       </p>
       <div className="card--container">
         {servicesData.map((service, i) => (

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { skillsData } from "../../../public/data/skillsData";
 import "./skills.scss";
-import assets from "../../assets";
 
 export default function Skills() {
   const varients = {
@@ -10,15 +9,15 @@ export default function Skills() {
   };
 
   return (
-    <section className="skills">
+    <section id="skills" className="skills">
       <div className="skills--container">
         <aside>
           <h2>My versatility in tech skills</h2>
           <hr />
           <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco
+            Explore my diverse skill set and adaptability across various
+            technologies, ensuring innovative solutions tailored to your project
+            needs.
           </p>
         </aside>
 
@@ -38,10 +37,11 @@ export default function Skills() {
 }
 
 function SkillComponent({ item, variants }) {
+  const { skillName, icon } = item;
   return (
     <motion.li variants={variants} className="skill--component">
-      <img src={assets[item.toLowerCase()]} alt={item.toLowerCase()} />
-      <span>{item}</span>
+      <img src={icon} alt={skillName} />
+      <span>{skillName}</span>
     </motion.li>
   );
 }

@@ -5,9 +5,7 @@ import Button from "../Button";
 import Header from "../header/Header";
 import "./hero.scss";
 import Social from "./Social";
-import assets from "../../assets";
-
-const imgPath = "public/assets/";
+import profileImg from "../../../public/assets/profile.png";
 
 const varients = {
   initial: { opacity: 0, translateY: -20 },
@@ -100,8 +98,7 @@ export default function Hero() {
               transition={{ duration: 1 }}
             >
               <motion.img
-                // src={`${imgPath}profile-img.png`}
-                src={assets.profileImg}
+                src={profileImg}
                 alt="profile-img"
                 initial={{ scale: 0.8, opacity: 0, translateY: 50 }}
                 whileInView={{ scale: 1, opacity: 1, translateY: 0 }}
