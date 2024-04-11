@@ -55,7 +55,7 @@ export const projectData = {
       id: 2,
       title: "VogueHub",
       poster: voguehub,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
+      desc: "VogueHub redefines fashion shopping with curated collections, secure payments, and fast delivery. Discover the latest trends and elevate your style with ease, all in one convenient online destination for fashion enthusiasts.",
       skillIcon: [react, tailwind, framer],
     },
     {
