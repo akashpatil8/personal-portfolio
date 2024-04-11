@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./tabComponent.scss";
+import { useState } from "react";
+import { motion } from "framer-motion";
+
 import { projectData } from "../../../public/data/projectData";
 import ProjectCard from "./ProjectCard";
 
@@ -15,18 +16,37 @@ const varients = {
 };
 
 export default function TabComponent() {
+  const [tab, setTab] = useState("web");
   const { web, mobile, uiux } = projectData;
 
   return (
-    <Tabs>
-      <TabList>
-        <Tab>Web</Tab>
-        <Tab>UI/UX</Tab>
-        <Tab>Mobile</Tab>
-      </TabList>
+    <>
+      <div className="tabs">
+        <button
+          onClick={() => setTab("web")}
+          className="tab--button"
+          style={{ backgroundColor: `${tab === "web" ? "#fadc40" : ""}` }}
+        >
+          Web
+        </button>
+        <button
+          onClick={() => setTab("uiux")}
+          className="tab--button"
+          style={{ backgroundColor: `${tab === "uiux" ? "#fadc40" : ""}` }}
+        >
+          UI/UX
+        </button>
+        <button
+          onClick={() => setTab("mobile")}
+          className="tab--button"
+          style={{ backgroundColor: `${tab === "mobile" ? "#fadc40" : ""}` }}
+        >
+          Mobile
+        </button>
+      </div>
 
-      <TabPanel>
-        <div className="tab-card-container">
+      {tab === "web" && (
+        <div className="tab--container">
           {web.map((item, i) => (
             <motion.div
               key={item.id}
@@ -39,10 +59,9 @@ export default function TabComponent() {
             </motion.div>
           ))}
         </div>
-      </TabPanel>
-
-      <TabPanel>
-        <div className="tab-card-container">
+      )}
+      {tab === "uiux" && (
+        <div className="tab--container">
           {uiux.map((item, i) => (
             <motion.div
               key={item.id}
@@ -55,10 +74,9 @@ export default function TabComponent() {
             </motion.div>
           ))}
         </div>
-      </TabPanel>
-
-      <TabPanel>
-        <div className="tab-card-container">
+      )}
+      {tab === "mobile" && (
+        <div className="tab--container">
           {mobile.map((item, i) => (
             <motion.div
               key={item.id}
@@ -67,11 +85,12 @@ export default function TabComponent() {
               whileInView="final"
               custom={i + 1}
             >
+              {" "}
               <ProjectCard item={item} />
             </motion.div>
           ))}
         </div>
-      </TabPanel>
-    </Tabs>
+      )}
+    </>
   );
 }

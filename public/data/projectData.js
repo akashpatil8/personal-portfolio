@@ -58,27 +58,27 @@ export const projectData = {
       desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
       skillIcon: [react, tailwind, framer],
     },
-    // {
-    //   id: 3,
-    //   title: "pizzeria",
-    //   poster: "webProject3",
-    //   desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-    //   skillIcon: ["html", "css", "javascript"],
-    // },
-    // {
-    //   id: 4,
-    //   title: "quizzler",
-    //   poster: "webProject4",
-    //   desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-    //   skillIcon: ["html", "css", "javascript"],
-    // },
-    // {
-    //   id: 5,
-    //   title: "mapty website",
-    //   poster: "webProject5",
-    //   desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-    //   skillIcon: ["html", "css", "javascript"],
-    // },
+    {
+      id: 3,
+      title: "VogueHub",
+      poster: voguehub,
+      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
+      skillIcon: [react, tailwind, framer],
+    },
+    {
+      id: 4,
+      title: "VogueHub",
+      poster: voguehub,
+      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
+      skillIcon: [react, tailwind, framer],
+    },
+    {
+      id: 5,
+      title: "VogueHub",
+      poster: voguehub,
+      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
+      skillIcon: [react, tailwind, framer],
+    },
   ],
   mobile: [
     {
