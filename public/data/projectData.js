@@ -1,6 +1,11 @@
 import voguehub from "../assets/voguehub.png";
-import webPortfolio from "../assets/web-portfolio.png";
-// import figma from "../public/assets/figma.png";
+import portfolioWebsite from "../assets/portfolio-website.png";
+import portfolioFigma from "../assets/portfolio-figma.png";
+import dart from "../assets/dart.png";
+import figma from "../assets/figma.png";
+import reactQuery from "../assets/react-query.png";
+import reactRouter from "../assets/react-router.png";
+import redux from "../assets/redux.png";
 // import github from "../public/assets/github.png";
 // import linkedin from "../public/assets/linkedin.png";
 // import twitter from "../public/assets/twitter.png";
@@ -16,8 +21,9 @@ import webPortfolio from "../assets/web-portfolio.png";
 import css from "../assets/css.png";
 // import email from "../public/assets/email.png";
 // import excel from "../public/assets/excel.png";
-// import flutter from "../public/assets/flutter.png";
+import flutter from "../assets/flutter.png";
 import framer from "../assets/framer.png";
+import tmdb from "../assets/tmdb.jpg";
 // import gemini from "../public/assets/gemini.png";
 // import git from "../public/assets/git.png";
 import html from "../assets/html.png";
@@ -35,7 +41,7 @@ import react from "../assets/react.png";
 import sass from "../assets/sass.png";
 // import sheets from "../public/assets/sheetassets.png";
 import tailwind from "../assets/tailwind.png";
-// import webProject1 from "../public/assets/web-project-1.jpg";
+import moviePedia from "../assets/moviepedia.png";
 // import webProject2 from "../public/assets/web-project-2.jpg";
 // import webProject3 from "../public/assets/web-project-3.jpg";
 // import webProject4 from "../public/assets/web-project-4.jpg";
@@ -46,17 +52,17 @@ export const projectData = {
   web: [
     {
       id: 1,
-      title: "portfolio website",
-      poster: webPortfolio,
-      desc: "For my portfolio website redesign, I revamped a static portfolio into a dynamic showcase, focusing on user experience and accessibility.",
-      skillIcon: [react, sass, framer],
-    },
-    {
-      id: 2,
       title: "VogueHub",
       poster: voguehub,
       desc: "VogueHub redefines fashion shopping with curated collections, secure payments, and fast delivery. Discover the latest trends and elevate your style with ease, all in one convenient online destination for fashion enthusiasts.",
-      skillIcon: [react, tailwind, framer],
+      skillIcon: [react, reactQuery, reactRouter, tailwind, framer],
+    },
+    {
+      id: 2,
+      title: "Pizzeria",
+      poster: voguehub,
+      desc: "Experience Pizzeriea, the ultimate pizza delivery website. With beautiful design and innovative features, customize your order and track delivery for a seamless pizza experience.",
+      skillIcon: [react, redux, reactRouter, tailwind],
     },
     {
       id: 3,
@@ -74,33 +80,19 @@ export const projectData = {
     },
     {
       id: 5,
-      title: "VogueHub",
-      poster: voguehub,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: [react, tailwind, framer],
+      title: "portfolio website",
+      poster: portfolioWebsite,
+      desc: "For my portfolio website redesign, I revamped a static portfolio into a dynamic showcase, focusing on user experience and accessibility.",
+      skillIcon: [react, sass, framer],
     },
   ],
   mobile: [
     {
       id: 1,
-      title: "portfolio website",
-      poster: webPortfolio,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: [html, css, javascript],
-    },
-    {
-      id: 2,
-      title: "e-commerce website",
-      poster: "webProject2",
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: [html, css, javascript],
-    },
-    {
-      id: 3,
-      title: "pizzeria",
-      poster: webPortfolio,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: [html, css, javascript],
+      title: "MoviePedia",
+      poster: moviePedia,
+      desc: "Explore Flutter Movie Finder, your gateway to discovering the latest movies and TV shows. Powered by TMDB API, enjoy personalized recommendations and seamless browsing for your next cinematic adventure.",
+      skillIcon: [flutter, tmdb, dart],
     },
   ],
   uiux: [
@@ -109,14 +101,14 @@ export const projectData = {
       title: "vogueHub",
       poster: voguehub,
       desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: ["figma"],
+      skillIcon: [figma],
     },
     {
       id: 2,
-      title: "vogueHub",
-      poster: voguehub,
+      title: "personal portfolio",
+      poster: portfolioFigma,
       desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: ["figma"],
+      skillIcon: [figma],
     },
   ],
 };

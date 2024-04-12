@@ -1,6 +1,6 @@
 .tabs {
   display: flex;
-  background-color: #fadb4071;
+  background-color: #fadb403e;
   border-radius: 3rem;
 
   .tab--button {
@@ -10,6 +10,10 @@
     border: none;
     font-size: 1.1rem;
     background-color: transparent;
+
+    &:hover {
+      background-color: #fadb404a;
+    }
   }
 }
 
