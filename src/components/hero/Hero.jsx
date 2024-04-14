@@ -5,7 +5,7 @@ import Button from "../Button";
 import Header from "../header/Header";
 import "./hero.scss";
 import Social from "./Social";
-import profileImg from "../../../public/assets/profile.png";
+import profileImg from "../../../public/assets/profile-img.png";
 
 const varients = {
   initial: { opacity: 0, translateY: -20 },

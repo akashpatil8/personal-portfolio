@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import linkIcon from "../../../public/assets/link.png";
 import "./projectCard.scss";
 
 export default function ProjectCard({ item }) {
   const [showOverlay, setShowOverLay] = useState(false);
 
-  const { desc, poster, title, skillIcon } = item;
+  const { desc, poster, title, skillIcon, link } = item;
 
   return (
     <motion.div
@@ -22,7 +23,10 @@ export default function ProjectCard({ item }) {
         >
           <div className="inner"></div>
           <div className="project-card-details">
-            <h4>{title}</h4>
+            <a href={link} target="_blank" rel="noopener">
+              <h4>{title}</h4>
+              <img src={linkIcon} alt="link-icon" />
+            </a>
             <p className="project-card-desc">{desc}</p>
             <ul className="skills--container">
               {skillIcon.map((icon) => (

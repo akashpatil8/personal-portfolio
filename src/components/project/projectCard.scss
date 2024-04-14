@@ -32,12 +32,23 @@
       z-index: 1;
       text-align: start;
 
-      h4 {
-        color: #fff;
-        text-transform: capitalize;
+      a {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
         margin-bottom: 7px;
-        font-weight: 500;
-        font-size: 1.2rem;
+
+        h4 {
+          color: #fff;
+          text-transform: capitalize;
+          text-decoration: underline;
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+
+        img {
+          height: 1rem;
+        }
       }
 
       .project-card-desc {

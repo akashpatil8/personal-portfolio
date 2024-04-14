@@ -1,5 +1,5 @@
 import Button from "../Button";
-import "./card.scss";
+import "./serviceCard.scss";
 
 export default function Card({ service }) {
   const { title, subtitle, image } = service;

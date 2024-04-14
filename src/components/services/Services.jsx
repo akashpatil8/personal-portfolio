@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { servicesData } from "../../../public/data/servicesData";
-import Card from "./Card";
+import ServiceCard from "./ServiceCard";
 import "./services.scss";
 
 export default function Services() {
@@ -32,7 +32,7 @@ export default function Services() {
             whileInView="final"
             custom={i}
           >
-            <Card service={service} />
+            <ServiceCard service={service} />
           </motion.div>
         ))}
       </div>

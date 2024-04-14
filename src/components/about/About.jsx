@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import Button from "../Button";
 import "./about.scss";
-import profileImg from "../../../public/assets/profile.png";
+import profileImg from "../../../public/assets/profile-img.png";
 
 export default function About() {
   return (

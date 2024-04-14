@@ -6,6 +6,7 @@ import figma from "../assets/figma.png";
 import reactQuery from "../assets/react-query.png";
 import reactRouter from "../assets/react-router.png";
 import redux from "../assets/redux.png";
+import pizzaStation from "../assets/pizza-station.png";
 // import github from "../public/assets/github.png";
 // import linkedin from "../public/assets/linkedin.png";
 // import twitter from "../public/assets/twitter.png";
@@ -42,72 +43,67 @@ import sass from "../assets/sass.png";
 // import sheets from "../public/assets/sheetassets.png";
 import tailwind from "../assets/tailwind.png";
 import moviePedia from "../assets/moviepedia.png";
-// import webProject2 from "../public/assets/web-project-2.jpg";
-// import webProject3 from "../public/assets/web-project-3.jpg";
-// import webProject4 from "../public/assets/web-project-4.jpg";
-// import webProject5 from "../public/assets/web-project-5.jpg";
-// import word from "../public/assets/word.png";
 
 export const projectData = {
   web: [
     {
-      id: 1,
+      id: 11,
       title: "VogueHub",
       poster: voguehub,
       desc: "VogueHub redefines fashion shopping with curated collections, secure payments, and fast delivery. Discover the latest trends and elevate your style with ease, all in one convenient online destination for fashion enthusiasts.",
+      link: "https://voguehub.netlify.app",
       skillIcon: [react, reactQuery, reactRouter, tailwind, framer],
     },
     {
-      id: 2,
-      title: "Pizzeria",
-      poster: voguehub,
+      id: 12,
+      title: "Pizza Station",
+      poster: pizzaStation,
       desc: "Experience Pizzeriea, the ultimate pizza delivery website. With beautiful design and innovative features, customize your order and track delivery for a seamless pizza experience.",
+      link: "https://pizza-station.vercel.app",
       skillIcon: [react, redux, reactRouter, tailwind],
     },
     {
-      id: 3,
-      title: "VogueHub",
-      poster: voguehub,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: [react, tailwind, framer],
-    },
-    {
-      id: 4,
-      title: "VogueHub",
-      poster: voguehub,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      skillIcon: [react, tailwind, framer],
-    },
-    {
-      id: 5,
+      id: 13,
       title: "portfolio website",
       poster: portfolioWebsite,
       desc: "For my portfolio website redesign, I revamped a static portfolio into a dynamic showcase, focusing on user experience and accessibility.",
+      link: "",
       skillIcon: [react, sass, framer],
+    },
+    {
+      id: 14,
+      title: "VogueHub",
+      poster: voguehub,
+      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
+      link: "",
+      skillIcon: [react, tailwind, framer],
     },
   ],
   mobile: [
     {
-      id: 1,
+      id: 21,
       title: "MoviePedia",
       poster: moviePedia,
       desc: "Explore Flutter Movie Finder, your gateway to discovering the latest movies and TV shows. Powered by TMDB API, enjoy personalized recommendations and seamless browsing for your next cinematic adventure.",
-      skillIcon: [flutter, tmdb, dart],
+      link: "https://github.com/akashpatil8/moviepedia.git",
+      skillIcon: [flutter, dart, tmdb],
     },
   ],
   uiux: [
     {
-      id: 1,
+      id: 31,
       title: "vogueHub",
       poster: voguehub,
       desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
+      link: "https://www.figma.com/proto/yt7Vzcv2QECEcxFGjtSHaG/VogueHub?node-id=1-2&scaling=scale-down-width",
       skillIcon: [figma],
     },
     {
-      id: 2,
+      id: 32,
       title: "personal portfolio",
       poster: portfolioFigma,
       desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
+      link: "https://www.figma.com/proto/hTQoSt2jTyMA8qdt7fK1Nu/Personal-Portfolio?node-id=1-6&scaling=scale-down-width",
       skillIcon: [figma],
     },
   ],
