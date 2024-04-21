@@ -6,6 +6,7 @@ export default function SkillsPill({
   skill,
   pillSide = "left",
   dotPosition = "center",
+  i,
 }) {
   return (
     <div className={`skills-pill-container dot-${dotPosition}`}>

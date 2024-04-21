@@ -43,11 +43,20 @@ import sass from "../assets/sass.png";
 // import sheets from "../public/assets/sheetassets.png";
 import tailwind from "../assets/tailwind.png";
 import moviePedia from "../assets/moviepedia.png";
+import hotstarClone from "../assets/hotstar-clone.png";
 
 export const projectData = {
   web: [
     {
       id: 11,
+      title: "Hotstar Clone",
+      poster: hotstarClone,
+      desc: "Developed a Hotstar Clone website, replicating the popular video streaming platform Hotstar. Leveraged the TMDB API to fetch movie and TV show data, providing users with a seamless browsing experience. The website is fully responsive, ensuring optimal viewing across various devices",
+      link: "https://hotstar-akash.vercel.app",
+      skillIcon: [react, tailwind, reactQuery, reactRouter, framer],
+    },
+    {
+      id: 12,
       title: "VogueHub",
       poster: voguehub,
       desc: "VogueHub redefines fashion shopping with curated collections, secure payments, and fast delivery. Discover the latest trends and elevate your style with ease, all in one convenient online destination for fashion enthusiasts.",
@@ -55,7 +64,7 @@ export const projectData = {
       skillIcon: [react, reactQuery, reactRouter, tailwind, framer],
     },
     {
-      id: 12,
+      id: 13,
       title: "Pizza Station",
       poster: pizzaStation,
       desc: "Experience Pizzeriea, the ultimate pizza delivery website. With beautiful design and innovative features, customize your order and track delivery for a seamless pizza experience.",
@@ -63,20 +72,12 @@ export const projectData = {
       skillIcon: [react, redux, reactRouter, tailwind],
     },
     {
-      id: 13,
+      id: 14,
       title: "portfolio website",
       poster: portfolioWebsite,
       desc: "For my portfolio website redesign, I revamped a static portfolio into a dynamic showcase, focusing on user experience and accessibility.",
       link: "",
       skillIcon: [react, sass, framer],
-    },
-    {
-      id: 14,
-      title: "VogueHub",
-      poster: voguehub,
-      desc: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con Ut enim ad minim veniam, quiscnostrud exercitation ullamcoa",
-      link: "",
-      skillIcon: [react, tailwind, framer],
     },
   ],
   mobile: [
