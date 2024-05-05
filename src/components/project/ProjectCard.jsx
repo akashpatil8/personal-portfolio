@@ -12,6 +12,7 @@ export default function ProjectCard({ item }) {
     <motion.div
       onHoverStart={() => setShowOverLay(true)}
       onHoverEnd={() => setShowOverLay(false)}
+      viewport={{ once: true }}
       className="project--card"
     >
       {showOverlay && (
@@ -19,6 +20,7 @@ export default function ProjectCard({ item }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          viewport={{ once: true }}
           className="overlay"
         >
           <div className="inner"></div>

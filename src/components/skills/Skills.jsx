@@ -26,6 +26,7 @@ export default function Skills() {
           initial="initial"
           whileInView="final"
           transition={{ staggerChildren: 0.1 }}
+          viewport={{ once: true }}
         >
           {skillsData.map((item) => (
             <SkillComponent variants={varients} key={item} item={item} />
@@ -39,7 +40,11 @@ export default function Skills() {
 function SkillComponent({ item, variants }) {
   const { skillName, icon } = item;
   return (
-    <motion.li variants={variants} className="skill--component">
+    <motion.li
+      variants={variants}
+      viewport={{ once: true }}
+      className="skill--component"
+    >
       <img src={icon} alt={skillName} />
       <span>{skillName}</span>
     </motion.li>

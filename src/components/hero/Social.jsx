@@ -34,6 +34,7 @@ export default function Social() {
           whileInView="final"
           whileHover={{ scale: 1.2 }}
           custom={i}
+          viewport={{ once: true }}
         />
       ))}
     </div>

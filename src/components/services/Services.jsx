@@ -31,6 +31,7 @@ export default function Services() {
             initial="initial"
             whileInView="final"
             custom={i}
+            viewport={{ once: true }}
           >
             <ServiceCard service={service} />
           </motion.div>

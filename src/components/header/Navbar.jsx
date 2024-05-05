@@ -21,6 +21,7 @@ export default function Navbar() {
         initial="initial"
         whileInView="final"
         transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
       >
         Akash
       </motion.span>
@@ -35,6 +36,7 @@ export default function Navbar() {
             transition={{ duration: 0.1 }}
             custom={i}
             key={item}
+            viewport={{ once: true }}
           >
             <a href={`#${item}`}>{item}</a>
             <div className="underline"></div>

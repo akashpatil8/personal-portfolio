@@ -17,6 +17,19 @@ const varients = {
 };
 
 export default function Hero() {
+  const startDate = new Date("2022-12-01");
+  const currentDate = new Date();
+
+  const differenceInMilliSeconds = currentDate - startDate;
+
+  const years = differenceInMilliSeconds / (1000 * 60 * 60 * 24 * 365);
+
+  const fullYears = Math.floor(years);
+
+  const remainingMonths = Math.floor((years - fullYears) * 12);
+
+  const experience = `${fullYears}.${remainingMonths}`;
+
   return (
     <section className="hero">
       <Header />
@@ -29,6 +42,7 @@ export default function Hero() {
               initial="initial"
               whileInView="final"
               custom={0.2}
+              viewport={{ once: true }}
             >
               <div className="line"></div>
               <span>Hello</span>
@@ -40,6 +54,7 @@ export default function Hero() {
               initial="initial"
               whileInView="final"
               custom={0.4}
+              viewport={{ once: true }}
             >
               {"I'm"} <span>Akash</span>,
             </motion.h1>
@@ -49,6 +64,7 @@ export default function Hero() {
               initial="initial"
               whileInView="final"
               custom={0.6}
+              viewport={{ once: true }}
             >
               <TypeAnimation
                 sequence={[
@@ -70,9 +86,10 @@ export default function Hero() {
               initial="initial"
               whileInView="final"
               custom={0.8}
+              viewport={{ once: true }}
             >
-              Crafting immersive digital experiences for 1.4 years. Proficient
-              in <span className="react">React</span>,{" "}
+              Crafting immersive digital experiences for {experience} years.
+              Proficient in <span className="react">React</span>,{" "}
               <span className="html"> HTML</span>,
               <span className="css"> CSS</span>, and
               <span className="js"> JavaScript</span>. Let&apos;s collaborate
@@ -85,6 +102,7 @@ export default function Hero() {
               initial="initial"
               whileInView="final"
               custom={1}
+              viewport={{ once: true }}
             >
               <Button>Download CV</Button>
               <Button type="border">Contact me</Button>
@@ -96,6 +114,7 @@ export default function Hero() {
               initial={{ scale: 0.7, translateY: 10 }}
               whileInView={{ scale: 1, translateY: 0 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
             >
               <motion.img
                 src={profileImg}
@@ -103,6 +122,7 @@ export default function Hero() {
                 initial={{ scale: 0.8, opacity: 0, translateY: 50 }}
                 whileInView={{ scale: 1, opacity: 1, translateY: 0 }}
                 transition={{ duration: 1.5, delay: 1 }}
+                viewport={{ once: true }}
               />
             </motion.div>
           </div>

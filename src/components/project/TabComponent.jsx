@@ -54,6 +54,7 @@ export default function TabComponent() {
               initial="initial"
               whileInView="final"
               custom={i + 1}
+              viewport={{ once: true }}
             >
               <ProjectCard item={item} />
             </motion.div>
@@ -69,6 +70,7 @@ export default function TabComponent() {
               initial="initial"
               whileInView="final"
               custom={i + 1}
+              viewport={{ once: true }}
             >
               <ProjectCard item={item} />
             </motion.div>
@@ -84,8 +86,8 @@ export default function TabComponent() {
               initial="initial"
               whileInView="final"
               custom={i + 1}
+              viewport={{ once: true }}
             >
-              {" "}
               <ProjectCard item={item} />
             </motion.div>
           ))}

@@ -36,12 +36,14 @@ export default function ContactCard() {
       initial={{ translateY: 50 }}
       whileInView={{ translateY: 0 }}
       transition={{ duration: 0.7, delay: 0.5 }}
+      viewport={{ once: true }}
     >
       <motion.div
         className="contact-card-form"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
+        viewport={{ once: true }}
       >
         <form onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="fullName">Name :</label>
@@ -89,6 +91,7 @@ export default function ContactCard() {
             initial="initial"
             whileInView="final"
             custom={1}
+            viewport={{ once: true }}
           >
             Reach me here
           </motion.h2>
@@ -97,6 +100,7 @@ export default function ContactCard() {
             initial="initial"
             whileInView="final"
             custom={1.3}
+            viewport={{ once: true }}
           />
         </div>
         <motion.p
@@ -104,6 +108,7 @@ export default function ContactCard() {
           initial="initial"
           whileInView="final"
           custom={1.6}
+          viewport={{ once: true }}
         >
           Let&apos;s Connect. Drop me a line for collaborations, projects, or
           just to say hello. Excited to hear from you!
@@ -116,6 +121,7 @@ export default function ContactCard() {
               initial="initial"
               whileInView="final"
               custom={1.6 + i * 0.3}
+              viewport={{ once: true }}
             >
               <div className="img--container">
                 <img src={item.icon} alt={item.icon} />

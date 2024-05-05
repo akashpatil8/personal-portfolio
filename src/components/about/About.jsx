@@ -12,6 +12,7 @@ export default function About() {
         initial={{ translateX: -100, opacity: 0 }}
         whileInView={{ translateX: 0, opacity: 1 }}
         transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <div className="img-background-border">
           <motion.div
@@ -19,6 +20,7 @@ export default function About() {
             initial={{ translateX: -33, translateY: 33 }}
             whileInView={{ translateX: 0, translateY: 0 }}
             transition={{ duration: 1.5, delay: 1 }}
+            viewport={{ once: true }}
           >
             <img src={profileImg} alt="profile-img" />
           </motion.div>
@@ -29,6 +31,7 @@ export default function About() {
         initial={{ translateX: 100, opacity: 0 }}
         whileInView={{ translateX: 0, opacity: 1 }}
         transition={{ duration: 1 }}
+        viewport={{ once: true }}
       >
         <h2>My Coding Journey</h2>
         <hr />
@@ -55,29 +58,7 @@ export default function About() {
             redefine possibilities in the world of front-end development.
           </p>
         </div>
-        {/* <p>
-          <span className="p-1">
-            I&apos;m Akash, a passionate front-end developer driven by
-            creativity and innovation. With 1.4 years of experience, I&apos;ve
-            mastered technologies like React, HTML, CSS, and JavaScript,
-            crafting immersive digital experiences that captivate audiences.
-          </span>
-          <span className="p-2">
-            My passion for UI/UX design shines through in every project,
-            blending creativity with functionality using tools like Figma and
-            Canva. Proficient in Git and GitHub, I excel in collaborative
-            environments, with backend prowess in Java, Python, and SQL.
-          </span>
-          <span className="p-3">
-            From humble beginnings to diverse projects, each step has shaped my
-            expertise and fueled my passion. What sets me apart is my relentless
-            pursuit of excellence and my knack for pushing boundaries.
-          </span>
-          <span className="p-4">
-            Join me on this exhilarating journey as we innovate, create, and
-            redefine possibilities in the world of front-end development.
-          </span>
-        </p> */}
+
         <Button type="solid">Hire Me</Button>
       </motion.div>
     </section>
