@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import Button from "../Button";
 import "./about.scss";
 import profileImg from "../../../public/assets/profile-img.png";
+import { getExperince } from "../../helper/getExperience";
 
 export default function About() {
+  const experience = getExperince();
+
   return (
     <section id="about" className="about">
       <motion.div
@@ -37,10 +40,11 @@ export default function About() {
         <hr />
         <div>
           <p>
-            I&apos;m Akash, a passionate front-end developer driven by
-            creativity and innovation. With 1.4 years of experience, I&apos;ve
-            mastered technologies like React, HTML, CSS, and JavaScript,
-            crafting immersive digital experiences that captivate audiences.
+            I&apos;m Akash, a passionate Front-end Developer driven by
+            creativity and innovation. With {experience} years of experience,
+            I&apos;ve mastered technologies like React, HTML, CSS, and
+            JavaScript, crafting immersive digital experiences that captivate
+            audiences.
           </p>
           <p>
             My passion for UI/UX design shines through in every project,

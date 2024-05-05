@@ -6,6 +6,7 @@ import Header from "../header/Header";
 import "./hero.scss";
 import Social from "./Social";
 import profileImg from "../../../public/assets/profile-img.png";
+import { getExperince } from "../../helper/getExperience";
 
 const varients = {
   initial: { opacity: 0, translateY: -20 },
@@ -17,18 +18,14 @@ const varients = {
 };
 
 export default function Hero() {
-  const startDate = new Date("2022-12-01");
-  const currentDate = new Date();
+  const resumeUrl =
+    "https://drive.google.com/file/d/1YMbZx9-vO8yOo-5GM_PMe7FSAG0o5ft0/view?usp=sharing";
 
-  const differenceInMilliSeconds = currentDate - startDate;
+  function handleDownloadCV() {
+    window.open(resumeUrl, "_blank");
+  }
 
-  const years = differenceInMilliSeconds / (1000 * 60 * 60 * 24 * 365);
-
-  const fullYears = Math.floor(years);
-
-  const remainingMonths = Math.floor((years - fullYears) * 12);
-
-  const experience = `${fullYears}.${remainingMonths}`;
+  const experience = getExperince();
 
   return (
     <section className="hero">
@@ -104,7 +101,8 @@ export default function Hero() {
               custom={1}
               viewport={{ once: true }}
             >
-              <Button>Download CV</Button>
+              <Button onClick={handleDownloadCV}>Download CV</Button>
+
               <Button type="border">Contact me</Button>
             </motion.div>
           </div>
