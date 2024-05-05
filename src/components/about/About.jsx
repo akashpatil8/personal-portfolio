@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import Button from "../Button";
+import Button from "../../ui/Button";
 import "./about.scss";
 import profileImg from "../../../public/assets/profile-img.png";
 import { getExperince } from "../../helper/getExperience";
@@ -63,7 +63,9 @@ export default function About() {
           </p>
         </div>
 
-        <Button type="solid">Hire Me</Button>
+        <a href="#contact">
+          <Button>Hire me</Button>
+        </a>
       </motion.div>
     </section>
   );

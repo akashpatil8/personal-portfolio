@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
-import Button from "../Button";
+import Button from "../../ui/Button";
 import Header from "../header/Header";
 import "./hero.scss";
 import Social from "./Social";
@@ -103,7 +103,9 @@ export default function Hero() {
             >
               <Button onClick={handleDownloadCV}>Download CV</Button>
 
-              <Button type="border">Contact me</Button>
+              <a href="#contact">
+                <Button type="border">Contact me</Button>
+              </a>
             </motion.div>
           </div>
           <div className="hero--image">

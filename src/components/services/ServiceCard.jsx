@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../../ui/Button";
 import "./serviceCard.scss";
 
 export default function Card({ service }) {
@@ -12,7 +12,9 @@ export default function Card({ service }) {
         <p>{subtitle}</p>
       </div>
 
-      <Button>Check out</Button>
+      <a href="#project">
+        <Button>Check out</Button>
+      </a>
     </div>
   );
 }

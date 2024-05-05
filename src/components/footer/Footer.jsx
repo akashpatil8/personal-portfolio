@@ -1,6 +1,6 @@
 import linkedin from "../../../public/assets/linkedin.png";
-import twitter from "../../../public/assets/twitter.png";
-import instagram from "../../../public/assets/instagram.png";
+import github from "../../../public/assets/github.png";
+import facebook from "../../../public/assets/facebook.png";
 import "./footer.scss";
 
 export default function Footer() {
@@ -13,9 +13,15 @@ export default function Footer() {
         <h5>Cookies</h5>
       </div>
       <div className="footer--social">
-        <img src={linkedin} alt="linkedin-icon" />
-        <img src={twitter} alt="twitter-icon" />
-        <img src={instagram} alt="instagram-icon" />
+        <a href="https://www.linkedin.com/in/akashpatil8">
+          <img src={linkedin} alt="linkedin" />
+        </a>
+        <a href="https://github.com/akashpatil8">
+          <img src={github} alt="github" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100003477346289">
+          <img src={facebook} alt="facebook" />
+        </a>
       </div>
     </footer>
   );
