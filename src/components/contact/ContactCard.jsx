@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import Button from "../Button";
-import "./contactCard.scss";
 import { useForm } from "react-hook-form";
+
 import location from "../../../public/assets/location.png";
 import phone from "../../../public/assets/phone.png";
 import email from "../../../public/assets/email.png";
+import Button from "../../ui/Button";
+import "./contactCard.scss";
 
 const data = [
   { title: "Address", subtitle: "Bangalore, India", icon: location },
