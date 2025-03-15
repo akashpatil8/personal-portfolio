@@ -29,18 +29,20 @@
     flex-wrap: wrap;
 
     .skill--component {
-      height: 50px;
+      height: 2.5rem;
       padding: 0 20px;
       display: flex;
       align-items: center;
       gap: 10px;
       box-shadow: 2px 2px 10px rgb(196, 196, 196);
       border-radius: 50px;
+
       img {
-        height: 24px;
+        height: 1.4rem;
       }
+
       span {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 500;
       }
     }
