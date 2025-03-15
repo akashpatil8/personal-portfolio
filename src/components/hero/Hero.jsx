@@ -66,9 +66,9 @@ export default function Hero() {
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
-                  "Front-end Developer",
+                  "MERN Stack Developer",
                   1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  "Front-end Designer",
+                  "Web Designer",
                   1000,
                 ]}
                 wrapper="span"
@@ -86,10 +86,10 @@ export default function Hero() {
               viewport={{ once: true }}
             >
               Crafting immersive digital experiences for {experience} years.
-              Proficient in <span className="react">React</span>,{" "}
-              <span className="html"> HTML</span>,
-              <span className="css"> CSS</span>, and
-              <span className="js"> JavaScript</span>. Let&apos;s collaborate
+              Proficient in <span className="react">ReactJS,</span>
+              <span className="node"> Node.js,</span>
+              <span className="express"> Express,</span> and
+              <span className="mongo"> MongoDB.</span> Let&apos;s collaborate
               and create something remarkable!
             </motion.p>
 
